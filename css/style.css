@@ -2,3 +2,54 @@ td, th {
 	border: 1px solid;
   }
   
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+#planets {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#planets th, #planets td {
+  border: 1px solid #ccc; /* adds a light gray border around each cell.*/
+  padding: 12px;
+  text-align: center; /*centers text*/
+}
+
+#planets th {
+  background-color: #2980b9; /*sets a blue background color for headers.*/
+  color: white;
+}
+
+#planets img {
+  width: 200px; /* changes size of images */
+  height: auto; /*fixes aspect ratio*/
+}
+
+#planets tr:nth-child(even) {
+  background-color: #ecf0f1; /*set a light gray background for even rows.*/
+}
+
+#planets tr:hover {
+  background-color: #bdc3c7; /*set a gray background when hovering over a row.*/
+}
+
+td {
+  font-size: 14px;
+}
+
+sup {
+  font-size: 0.8em;
+}
+
+  
