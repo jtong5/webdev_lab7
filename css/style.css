@@ -3,7 +3,7 @@ td, th {
   }
   
 body {
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   background-image: url("../images/space.jpg");
   background-size: cover;
   background-position: center;
@@ -26,12 +26,13 @@ body {
   margin-bottom: 15px;
   font-size: 27px;
 }
+
 #planets {
   width: 100%;
   border-collapse: collapse;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9); /*makes cells slightly transparent*/
   color: #333;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* adds a shadow to the table */
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.5); /* adds a shadow to the table */
   margin: 20px 0;
 }
 
