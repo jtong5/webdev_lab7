@@ -3,20 +3,35 @@ td, th {
   }
   
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  background-image: url("../images/space.jpg");
+  background-size: cover;
+  background-position: center;
   color: #333;
   margin: 20px;
 }
 
-h1 {
+#main-title { /*centers title*/
   text-align: center;
-  color: #2c3e50;
+  text-shadow: 0 0 7px #FFA400; /*makes text glow orange*/
+  color: white;
+  margin-bottom: 10px;
+  font-size: 37px;
 }
 
+.subtitle { /*centers subtitle*/
+  text-align: center;
+  text-shadow: 0 0 7px #FF0000; /*makes text glow red*/
+  color: white;
+  margin-bottom: 15px;
+  font-size: 27px;
+}
 #planets {
   width: 100%;
   border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* adds a shadow to the table */
   margin: 20px 0;
 }
 
@@ -27,29 +42,32 @@ h1 {
 }
 
 #planets th {
-  background-color: #2980b9; /*sets a blue background color for headers.*/
+  background-color: #2980b9; /*sets a light blue background color for table header.*/
   color: white;
+  font-style: italic;
 }
 
 #planets img {
   width: 200px; /* changes size of images */
   height: auto; /*fixes aspect ratio*/
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5); /*makes it look like images have drop shadow*/
 }
 
 #planets tr:nth-child(even) {
-  background-color: #ecf0f1; /*set a light gray background for even rows.*/
+  background-color: #ecf0f1; /*set a light gray background for every even row.*/
 }
 
-#planets tr:hover {
+#planets td:hover {
   background-color: #bdc3c7; /*set a gray background when hovering over a row.*/
+  transition: background-color 0.3s ease-in-out; /*fades in the hover*/
 }
 
 td {
-  font-size: 14px;
+  font-size: 15px; /*adjusts font size*/
 }
 
 sup {
-  font-size: 0.8em;
+  font-size: 0.8em; /*adjusts superscript font size*/
 }
 
   
